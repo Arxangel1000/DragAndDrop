@@ -1,0 +1,5 @@
+Convert mouse position to gameObject position for dropping
+
+Vector3 mousePos = Input.mousePosition;
+mousePos.z = currentSelectPart.position.z;
+currentSelectPart.position = _camera.ScreenToWorldPoint(mousePos);
